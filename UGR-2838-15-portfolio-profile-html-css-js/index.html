@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Home</title>
+  <link rel="stylesheet" href="./src/styles/home.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./src/images/logo.jpg" alt="Logo">
+    </div>
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./src/about.html">About</a>
+      <a href="./src/hobbies.html">Hobbies</a>
+      <a href="./src/certificates.html">Certificates</a>
+      <a href="./src/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="content-wrapper">
+        <!-- Top Row -->
+        <div class="top-row">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="./src/images/myimg.jpg" alt="Profile Picture">
+            </div>
+            
+            <!-- Welcome Text Section -->
+            <div class="text-section">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I am a striving and passionate software engineering student who is deeply interested in technology and its endless possibilities. This portfolio showcases my journey, achievements, and aspirations in the tech field.</p>
+            </div>
+        </div>
+        
+        <!-- Bottom Row -->
+        <div class="bottom-row">
+            <!-- Contact Info Section -->
+            <div class="contact-section">
+                <p>If you would like to reach out, feel free to contact me through any of the following methods:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:fenetydamtew@gmail.com">fenetydamtew@gmail.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Fenety" target="_blank">github.com/Fenety</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fenety-damtewand" target="_blank">linkedin.com/in/fenety-damtewand</a></li>
+                </ul>
+            </div>
+            
+            <!-- Download Button Section -->
+            <div class="download-cv-container">
+                <a href="./src/images/CV.pdf" download>Download My CV</a>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <script src="./src/scripts/home.js"></script>
+<!-- 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Hamburger Menu
+        const navbar = document.querySelector(".navbar");
+        const menuToggle = document.createElement("button");
+        menuToggle.innerHTML = "☰";
+        menuToggle.classList.add("menu-toggle");
+        navbar.parentElement.insertBefore(menuToggle, navbar);
+
+        menuToggle.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            menuToggle.innerHTML = navbar.classList.contains("active") ? "✕" : "☰";
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!navbar.contains(e.target) && !menuToggle.contains(e.target)) {
+                navbar.classList.remove("active");
+                menuToggle.innerHTML = "☰";
+            }
+        });
+    });
+  </script> -->
+</body>
+</html>

@@ -3,53 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificates</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>My Certificates</title>
+  <link rel="stylesheet" href="styles/certificates.css">
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="certificates.html">Certificates</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
     <div class="logo">
-            <img src="images/logo.jpg" alt="LOGO">
-        </div>
+      <img src="images/logo.jpg" alt="Logo">
+    </div>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <p>I gained these certificates by actively participating in a variety of courses, workshops, and activities that have helped me grow both academically and personally.</p>
-    <div class="certificates">
-      <div class="certificate-item">
-        <img src="images/certificate1.jpg" alt="Intro to Packet Tracer Certificate">
-        <p>Introduction to Packet Tracer Certificate, awarded for completing a networking simulation course.</p>
+  <main class="container">
+    <section class="certificates-section">
+      <h1>My Certificates</h1>
+      <p class="intro-text">I gained these certificates by actively participating in a variety of courses, workshops, and activities that have helped me grow both academically and personally.</p>
+      
+      <div class="certificates-grid">
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate1.jpg" alt="Intro to Packet Tracer Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>Introduction to Packet Tracer Certificate, awarded for completing a networking simulation course.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate2.jpg" alt="Introduction to Python Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>Introduction to Python Certificate, showcasing my skills in Python programming.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate3.jpg" alt="Blue Health Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>Blue Health Certificate, recognizing my participation in health-related initiatives.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate4.jpg" alt="Card Design Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>Card Design Certificate, awarded for excellence in graphic design and creativity.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate5.jpg" alt="ECA Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>ECA Certificate, acknowledging my active involvement in extracurricular activities.</p>
+          </div>
+        </div>
+
+        <div class="certificate-card">
+          <div class="certificate-image">
+            <img src="images/certificate6.jpg" alt="Volleyball Certificate">
+          </div>
+          <div class="certificate-description">
+            <p>Volleyball Certificate, for exceptional performance and teamwork in sports.</p>
+          </div>
+        </div>
       </div>
-      <div class="certificate-item">
-        <img src="images/certificate2.jpg" alt="Introduction to Python Certificate">
-        <p>Introduction to Python Certificate, showcasing my skills in Python programming.</p>
+      
+      <!-- Carousel Navigation -->
+      <div class="carousel-nav">
+        <button class="prev-btn">❮</button>
+        <button class="next-btn">❯</button>
       </div>
-      <div class="certificate-item">
-        <img src="images/certificate3.jpg" alt="Blue Health Certificate">
-        <p>Blue Health Certificate, recognizing my participation in health-related initiatives.</p>
-      </div>
-      <div class="certificate-item">
-        <img src="images/certificate4.jpg" alt="Card Design Certificate">
-        <p>Card Design Certificate, awarded for excellence in graphic design and creativity.</p>
-      </div>
-      <div class="certificate-item">
-        <img src="images/certificate5.jpg" alt="ECA Certificate">
-        <p>ECA Certificate, acknowledging my active involvement in extracurricular activities.</p>
-      </div>
-      <div class="certificate-item">
-        <img src="images/certificate6.jpg" alt="Volleyball Certificate">
-        <p>Volleyball Certificate, for exceptional performance and teamwork in sports.</p>
-      </div>
-    </div>
+    </section>
   </main>
+
+  <script src="scripts/certificates.js"></script>
 </body>
 </html>

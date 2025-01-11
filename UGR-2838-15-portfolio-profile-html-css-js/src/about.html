@@ -4,50 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
   <header>
     <div class="logo">
       <img src="images/logo.jpg" alt="LOGO">
     </div>
-    <div class="navbar">
-      <nav>
-        <a href="index.html">Home</a>
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="hobbies.html">Hobbies</a>
         <a href="certificates.html">Certificates</a>
         <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="about">
-      <h1>About Me</h1>
-      <p>I am a person with many interests, especially in technology. I am a third-year Software Engineering student at Addis Ababa Institute of Technology, and I enjoy learning and growing in my field.</p>
-      
-      <h2>Education</h2>
-      <p>As a third-year Software Engineering student, I have mastered key topics such as Python, Java, Object-Oriented Programming (OOP), and Data Structures & Algorithms (DSA). I am continuously expanding my knowledge in the field and look forward to applying my skills in real-world projects.</p>
-      
-      <h2>Skills</h2>
-      <section class="skills">
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Programming Languages: Python, Java, JavaScript</li>
-          <li>Web Development: HTML, CSS, JavaScript</li>
-          <li>Tools & Technologies: Git</li>
-        </ul>
+  <main class="container">
+    <div class="first-row">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="images/picture.jpg" alt="Picture">
+        </div>
         
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Strong teamwork and collaboration abilities</li>
-          <li>Good communication skills</li>
-          <li>Problem-solving and critical thinking</li>
-          <li>Organization and time management</li>
-          <li>Team leadership</li>
-        </ul>
-      </section>
-    </section>
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="details">
+                <h1>About Me</h1>
+                <p>I am a person with many interests, especially in technology. 
+                I am a third-year Software Engineering student at Addis Ababa Institute 
+                of Technology, and I enjoy learning and growing in my field.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="second-row">
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2>Education</h2>
+            <p>As a third-year Software Engineering student, I have mastered key topics such as Python, Java, Object-Oriented Programming (OOP), and Data Structures & Algorithms (DSA). I am continuously expanding my knowledge in the field and look forward to applying my skills in real-world projects.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill-set">
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming Languages: Python, Java, JavaScript</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>
+                        <li>Tools & Technologies: Git</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Strong teamwork and collaboration abilities</li>
+                        <li>Good communication skills</li>
+                        <li>Problem-solving and critical thinking</li>
+                        <li>Organization and time management</li>
+                        <li>Team leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
   </main>
+
+  <script src="./scripts/about.js"></script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Hamburger Menu
+        const navbar = document.querySelector(".navbar");
+        const menuToggle = document.createElement("button");
+        menuToggle.innerHTML = "☰";
+        menuToggle.classList.add("menu-toggle");
+        navbar.parentElement.insertBefore(menuToggle, navbar);
+
+        menuToggle.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            menuToggle.innerHTML = navbar.classList.contains("active") ? "✕" : "☰";
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!navbar.contains(e.target) && !menuToggle.contains(e.target)) {
+                navbar.classList.remove("active");
+                menuToggle.innerHTML = "☰";
+            }
+        });
+    });
+  </script> -->
 </body>
 </html>

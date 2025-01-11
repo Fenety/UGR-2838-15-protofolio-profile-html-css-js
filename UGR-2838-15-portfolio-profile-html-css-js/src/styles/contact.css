@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #F2E9E4;
+    color: #22223B;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F2E9E4;
+    position: relative;
+    margin-bottom: 5px;
+}
+.send{margin-bottom: 0px;}
+.logo img {
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    background-color: #F2E9E4;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.navbar a {
+    color: #22223B;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    position: relative;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:active,
+.navbar a.active {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-section {
+    text-align: left;
+    padding: 0;
+    margin-top: -20px;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    color: #22223B;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact-form {
+    background: #F2E9E4; 
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: #22223B;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    max-width: 400px;
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #22223B;
+    border-radius: 8px;
+    background-color: #F2E9E4;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #22223B;
+    
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.send-button {
+    background-color: #4A4E69;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #22223B;
+    transform: translateY(-2px);
+}
+
+.send-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none;
+    background: #C9ADA7;
+    border: none;
+    color: #22223B;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        width: 200px;
+        background-color: #C9ADA7;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 12px 15px;
+        border-bottom: 1px solid rgba(34, 34, 59, 0.1);
+    }
+
+    .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar a:hover,
+    .navbar a:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .container {
+        padding: 20px;
+        width: 500PX;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-group {
+        max-width: 100%;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-section {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+
+    .contact-section h1 {
+        padding-left: 10px;
+    }
+
+    .form-group, 
+    .send-button-container {
+        max-width: 100%;
+    }
+} 
+
+/* Update box backgrounds */
+.contact-info,
+.contact-form,
+.social-links {
+    background-color: #F2E9E4;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* Form inputs and textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #22223B;
+    border-radius: 8px;
+    background-color: #F2E9E4;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #22223B;
+    box-shadow: 0 0 0 2px rgba(34, 34, 59, 0.1);
+}
+
+/* Social media links */
+.social-links a {
+    background-color: #F2E9E4;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 30px 15px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .form-group {
+        max-width: 100%;
+    }
+
+    .contact-section h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    .contact-section {
+        margin-top: 0;
+    }
+
+    .contact-section h1 {
+        font-size: 1.8rem;
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 480px) and (orientation: landscape) {
+    .container {
+        padding: 15px;
+    }
+
+    .contact-section h1 {
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+
+    .send-button-container {
+        margin-top: 15px;
+    }
+} 
